@@ -1,6 +1,6 @@
 #! /bin/sh
 git clone https://github.com/taweili/openblocks.git && \
-pushd openblocks && \
+cd openblocks && \
 mvn install && \
-popd &&\
+cd .. && \
 rm -rf openblocks
