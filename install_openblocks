@@ -4,4 +4,3 @@ pushd openblocks && \
 mvn install && \
 popd &&\
 rm -rf openblocks
-
