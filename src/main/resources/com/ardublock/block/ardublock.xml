@@ -2816,24 +2816,24 @@
 			</Images>
 		</BlockGenus>							
 		
-		<BlockGenus name="oj_relay" kind="command" color="0 0 255"
-			initlabel="bg.oj_relay">
+		<BlockGenus name="OJ-XM1115" kind="command" color="255 0 0"
+			initlabel="bg.OJ-XM1115">
 			<description>
 				<text>Openjumper Relay</text>
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="Tinker_O1" label="O1" />
+					<DefaultArg genus-name="number" label="1" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean"
 					connector-kind="socket" label="bc.status">
-					<DefaultArg genus-name="digital-high" label="HIGH" />
+					<DefaultArg genus-name="digital-high" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
-				<Image width="75" height="75">
-					<FileLocation>com/ardublock/block/openjumper/relay-348x348.jpg</FileLocation>
+				<Image>
+					<FileLocation>com/ardublock/block/openjumper/OJ-XM1115-relay.png</FileLocation>
 				</Image>
 			</Images>
 		</BlockGenus>
@@ -3100,8 +3100,8 @@
 				<BlockGenusMember>ls_TiltModule</BlockGenusMember>
 				<BlockGenusMember>ls_TouchSensorModule</BlockGenusMember>	
 			</BlockDrawer>
-			<BlockDrawer button-color="255 000 000" name="bd.openjumper">
-				<BlockGenusMember>oj_relay</BlockGenusMember>
+			<BlockDrawer button-color="255 000 000" name="bd.openjumper" type="factory">
+				<BlockGenusMember>OJ-XM1115</BlockGenusMember>
 			</BlockDrawer>
 			<!-- Shapes are automatically loaded as blocks in the Shapes drawer (see 
 				slcodeblocks.ShapeBlocksGenerator for details) -->
